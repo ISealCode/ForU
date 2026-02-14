@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For my love</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Landing / Gate screen -->
+  <main class="gate" id="gate">
+    <h1>Vvнийг онгойлгоорой.</h1>
+    <p class="subtitle">Энэ захиаг онгойлгох уу? ❤️</p>
+    <button id="openBtn" class="btn">Онгойлгох</button>
+
+    <!-- audio must be started after click -->
+    <audio id="bgm" loop preload="auto">
+      <source src="music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
+  </main>
+
+  <!-- Letter page (hidden until click) -->
+  <section class="letter hidden" id="letter">
+    <div class="card">
+      <div class="top">
+        <h2>Миний хайр ❤️</h2>
+        <p class="date" id="today"></p>
+      </div>
+
+      <p class="typing" id="typing"></p>
+
+      <div class="photos">
+        <!-- Replace with your images -->
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" alt="photo 1">
+        <img src="https://images.unsplash.com/photo-1520975682031-a9031cf7edb6?w=600" alt="photo 2">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" alt="photo 3">
+      </div>
+
+      <p class="footer">— Always yours</p>
+      <button id="backBtn" class="btn ghost">Буцах</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
